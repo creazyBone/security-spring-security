@@ -16,13 +16,13 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
         includeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Controller.class)})
 public class WebConfig implements WebMvcConfigurer {
 
-    @Bean
+   /* @Bean
     public InternalResourceViewResolver viewResolver() {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
         viewResolver.setPrefix("/WEB-INF/view/");
         viewResolver.setSuffix(".jsp");
         return viewResolver;
-    }
+    }*/
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
